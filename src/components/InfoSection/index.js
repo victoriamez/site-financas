@@ -13,7 +13,7 @@ const InfoSection = () => {
             <Column1>
               <TextWrapper>
                 <TopLine>Empréstimo</TopLine>
-                <Heading>A partir de R$x,00</Heading>
+                <Heading>A partir de R$X,00</Heading>
                 <Subtitle>Simule agora</Subtitle>
                 <BtnWrap>
                   <Button to='home' />
