@@ -1,33 +1,31 @@
-import React from 'react';
-import { Button } from "react-scroll";
-// import { ImgWrap } from './InfoElements';
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine,
-        Heading, Subtitle, BtnWrap, ImgWrap, Img } from './InfoElements';
+import React from 'react'
+import { Button } from '../ButtonElements'
+// import { TopLine, Column2 } from './InfoElements';
+import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img } from './InfoElements'
 
-const InfoSection = () => {
+const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img}) => {
   return (
     <>
-      <InfoContainer>
+      <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
-          <InfoRow>
+          <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <TopLine>Empréstimo</TopLine>
-                <Heading>A partir de R$X,00</Heading>
-                <Subtitle>Simule agora</Subtitle>
+                <TopLine>{topLine}</TopLine>
+                <Heading lightText={lightText}>{headline}</Heading>
+                <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button to='home' />
+                  <Button to='home'>{buttonLabel}</Button>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img />
+                <Img src={img} />
               </ImgWrap>
             </Column2>
           </InfoRow>
         </InfoWrapper>
-
       </InfoContainer>
 
     </>
