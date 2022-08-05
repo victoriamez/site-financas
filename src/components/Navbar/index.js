@@ -13,26 +13,26 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">FINANCIAMENTO</NavLinks>
+              <NavLinks to="financiamento">Financiamento</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="about">SIMULAÇÕES</NavLinks>
+              <NavLinks to="simulacoes">Simulações</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="about">TRANSPARÊNCIA</NavLinks>
+              <NavLinks to="transparencia">Transparência</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="about">SOLUÇÕES</NavLinks>
+              <NavLinks to="solucoes">Soluções</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="about">AJUDA</NavLinks>
+              <NavLinks to="ajuda">Ajuda</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="about">CADASTRE-SE</NavLinks>
+              <NavLinks to="cadastro">Cadastre-se</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/entrar">ENTRAR</NavBtnLink>
+            <NavBtnLink to="/entrar">Entrar</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

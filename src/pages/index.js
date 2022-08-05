@@ -3,7 +3,9 @@ import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import FinanceSection from '../components/FinanceSection';
 import InfoSection from '../components/InfoSection';
-import { homeObjOne } from '../components/InfoSection/Data';
+import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive } from '../components/InfoSection/Data';
+import Services from '../components/Services';
+// import Services from '../components/Services/ServicesElements';
 // import { homeObjOne } from '../components/InfoSection/Data';
 
 const Home = () => {
@@ -20,6 +22,11 @@ const Home = () => {
     <Navbar toggle={toggle}/>
     <FinanceSection />
     <InfoSection {...homeObjOne}/>
+    <InfoSection {...homeObjTwo}/>
+    <InfoSection {...homeObjThree}/>
+    <InfoSection {...homeObjFour}/>
+    <InfoSection {...homeObjFive}/>
+    <Services />
     </>
   )
 }

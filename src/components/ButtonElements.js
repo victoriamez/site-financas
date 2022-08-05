@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 export const Button = styled(Link)`
   border-radius: 10px;
-  background: ${({primary}) => (primary ? '#0D3B66' : '#5C847A')};
+  background: ${({primary}) => (primary ? '#57BF72' : '#5C847A')};
   white-space: nowrap;
   padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
   color: ${({dark}) => (dark ? '#0D3B66' : '#fff')};
