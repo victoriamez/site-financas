@@ -5,8 +5,10 @@ import FinanceSection from '../components/FinanceSection';
 import InfoSection from '../components/InfoSection';
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive } from '../components/InfoSection/Data';
 import Services from '../components/Services';
+import Financiamento from '../components/FinanciamentoSection/FinanciamentoElements';
 // import Services from '../components/Services/ServicesElements';
 // import { homeObjOne } from '../components/InfoSection/Data';
+import Footer from '../components/Footer'
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -27,6 +29,8 @@ const Home = () => {
     <InfoSection {...homeObjFour}/>
     <InfoSection {...homeObjFive}/>
     <Services />
+    <Financiamento />
+    <Footer />
     </>
   )
 }

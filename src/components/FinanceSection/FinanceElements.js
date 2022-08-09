@@ -83,7 +83,7 @@ export const FinanceH1 = styled.h1`
 
 export const FinanceP = styled.p`
   margin-top: 24px;
-  color: #5C847A;
+  color: #377D33;
   font-size: 20px;
   text-weight: 100;
   text-align: center;
@@ -106,14 +106,20 @@ export const FinanceBtnWrapper = styled.div`
   flex-direction: column;
   align-items: center;
 
+  &:hover {
+    transition: all 0.1s;
+    transform: scale(0.98);}
+
 `
 
 export const ArrowForward = styled(MdArrowForward)`
   margin-left: 8px;
   font-size: 20px;
 
+
 `
 export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
+  // transform: scale(0.2);
 `

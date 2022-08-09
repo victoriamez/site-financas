@@ -6,8 +6,9 @@ import Icon3 from '../../images/teste-img.png';
 
 const Services = () => {
   return (
+    // <ServicesContainer id="servicos/ofertas">
     <ServicesContainer>
-      <ServicesH1>Teste</ServicesH1>
+      <ServicesH1>Nossas ofertas:</ServicesH1>
         <ServicesWrapper>
           <ServicesCard>
             <ServicesIcon src={Icon1} />

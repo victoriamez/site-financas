@@ -1,6 +1,8 @@
 import React from 'react'
 import {FaBars} from 'react-icons/fa'
+import { Link } from "react-router-dom"
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavbarElements';
+import { Button } from '@mui/material'
 
 const Navbar = ({ toggle }) => {
   return (
@@ -32,7 +34,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/entrar">Entrar</NavBtnLink>
+            <Button component={Link} to="/entrar" color='success' variant='contained'>Entrar</Button>
           </NavBtn>
         </NavbarContainer>
       </Nav>

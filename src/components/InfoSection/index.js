@@ -20,6 +20,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
                     duration={500}
                     spy={true}
                     exact='true'
+                    // to trigger at the right time
                     offset={-80}
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
