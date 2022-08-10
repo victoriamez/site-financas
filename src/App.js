@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 // import { SidebarContainer, Icon, CloseIcon } from './components/Sidebar/SidebarElement';
 import Home from './pages';
 import SigninPage from './pages/signin';
+import SignupPage from './pages/signup';
 // import Navbar from './components/Navbar';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} exact />
         <Route path="/entrar" element={<SigninPage />} exact />
+        <Route path="/cadastro" element={<SignupPage />} exact />
         {/* <Route path="/entrar" component={SigninPage} exact /> */}
       </Routes>
     </Router>

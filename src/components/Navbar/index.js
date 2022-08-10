@@ -30,7 +30,7 @@ const Navbar = ({ toggle }) => {
               <NavLinks to="ajuda">Ajuda</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="cadastro">Cadastre-se</NavLinks>
+              <NavLinks component={Link} to="/cadastro" >Cadastre-se</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
