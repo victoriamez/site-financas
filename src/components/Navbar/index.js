@@ -39,6 +39,9 @@ const Navbar = ({ toggle }) => {
           <NavBtn>
             <Button component={Link} to="/dashboard" color='primary' variant='contained'>Dashboard</Button>
           </NavBtn>
+          <NavBtn>
+            <Button component={Link} to="/userdashboard" color='primary' variant='contained'> User</Button>
+          </NavBtn>
         </NavbarContainer>
       </Nav>
 

@@ -5,8 +5,8 @@ import CommonButton from '../../../components/common/commonButton';
 
 const AdminUsuarios = () => {
   return (
-    <Grid style={{marginLeft: '500px'}}>
-      Esta é a página de Usuários do Administrador.
+    <Grid item xs={8}>
+      Esta é a página de Usuários do Administrador com muito texto socorroooooo.
       <CommonButton>Teste Botão</CommonButton>
     </Grid>
   )

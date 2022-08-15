@@ -1,5 +1,6 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 // import { SidebarContainer, Icon, CloseIcon } from './components/Sidebar/SidebarElement';
 import Home from './pages';
 import SigninPage from './pages/signin';
@@ -13,27 +14,42 @@ import AdminFuncionarios from './pages/DashAdminPages/Funcionarios/AdminFunciona
 import AdminParceiros from './pages/DashAdminPages/Parceiros/AdminParceiros';
 import AdminServicos from './pages/DashAdminPages/Serviços/AdminServicos';
 // import { ThemeProvider } from '@mui/material';
+// import { Grid } from '@mui/material';
+import UserDashboard from './pages/DashUserPages/UserDashboard';
+import MinhaConta from './pages/DashUserPages/MinhaConta';
+import MeusEmprestimos from './pages/DashUserPages/MeusEmprestimos';
+import MeusInvestimentos from './pages/DashUserPages/MeusInvestimentos';
+// import { Grid } from '@mui/material';
+import { ThemeProvider } from '@mui/material';
+import { dashboardTheme } from './dashboardTheme';
+
 
 function App() {
   return (
-    // <ThemeProvider>
-      <Router>
+    <ThemeProvider theme={dashboardTheme}>
+      <BrowserRouter>
         {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<Home />} exact />
           <Route path="/entrar" element={<SigninPage />} exact />
           <Route path="/cadastro" element={<SignupPage />} exact />
-          <Route path="/dashboard" element={<DashboardPage />} exact />
-          {/* ver depois: para não se repetir, utilizar const e map method */}
-            <Route path="/dashboard/database" element={<AdminDatabase />} />
-            <Route path="/dashboard/usuarios" element={<AdminUsuarios />} exact />
-            <Route path="/dashboard/financeiro" element={<AdminFinanceiro/>} exact />
-            <Route path="/dashboard/funcionarios" element={<AdminFuncionarios />} exact />
-            <Route path="/dashboard/parceiros" element={<AdminParceiros />} exact />
-            <Route path="/dashboard/servicos" element={<AdminServicos />} exact />
+            <Route path="userdashboard" element={<UserDashboard />} exact>
+              <Route path="minha-conta" element={<MinhaConta />} exact />
+              <Route path="meus-investimentos" element={<MeusInvestimentos />} exact />
+              <Route path="meus-emprestimos" element={<MeusEmprestimos />} exact />
+            </Route>
+
+          <Route path="dashboard" element={<DashboardPage />} exact>
+            <Route path="database" element={<AdminDatabase />} />
+            <Route path="usuarios" element={<AdminUsuarios />} exact />
+            <Route path="financeiro" element={<AdminFinanceiro/>} exact />
+            <Route path="funcionarios" element={<AdminFuncionarios />} exact />
+            <Route path="parceiros" element={<AdminParceiros />} exact />
+            <Route path="servicos" element={<AdminServicos />} exact />
+          </Route>
         </Routes>
-      </Router>
-    // {/* </ThemeProvider> */}
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
