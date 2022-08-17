@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({lightBg}) => (lightBg ? 'linear-gradient(to left top, #2c7fbb, #2b84bc, #2c89be, #2f8ebe, #3493bf, #339dc6, #33a7cc, #35b1d2, #34c4dd, #3ad6e6, #49e9ed, #5ffbf1)' : 'linear-gradient(to left top, #051937, #112f56, #1c4876, #256298, #2b7ebb)')};
+  background: ${({lightBg}) => (lightBg ? 'linear-gradient(to left top, #2c7fbb, #2b84bc, #2c89be, #2f8ebe, #3493bf, #3599c0, #399ec1, #3ea4c1, #45abc0, #4fb3bf, #5bb9bd, #69c0bb)' : 'linear-gradient(to left top, #051937, #112f56, #1c4876, #256298, #2b7ebb)')};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
